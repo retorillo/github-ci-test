@@ -1,0 +1,10 @@
+name: 'Hello World Action'
+description: 'Say "Hello World"'
+author: 'Retorillo'
+inputs:
+  who-to-greet:
+    description: 'Who to use'
+    default: 'unknown'
+runs:
+  using: 'node12'
+  main: 'index.js'

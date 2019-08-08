@@ -1,0 +1,12 @@
+name: Test Workflow
+on: [push]
+jobs:
+  build:
+    name: Hello World
+    runs-on: ubuntu-latest
+    steps:
+    - id: helloWorld
+      uses: actions/hello-world-action
+      with:
+        who-to-hello: 'Octcat'
+    - run: echo "The time was ${{ steps.helloWorld.outputs.time }}"
